@@ -40,18 +40,6 @@ app.use(cors());
 
 app.use(express.json());
 
-app.get("/", (req, res) => {
-
-    res.json({
-
-        message: "Books CRUD API",
-
-        status: "OK"
-
-    });
-
-});
-
 app.post("/books", async (req, res) => {
 
     try {
